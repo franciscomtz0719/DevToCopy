@@ -10,64 +10,83 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-inline-flex border border-dark">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-0">
+            <div class="container-fluid justify-content-start">
             <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <span><a href="#"><img src="../images/header-nav-bar/devto-logo.svg" alt=""></a></span>
             </div>
-              <formm class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </formm>
-           </div>  
+              <form class="d-flex border border-1 ms-3">
+                <input class="form-control m-0 border-0" type="search" placeholder="Search" aria-label="Search"> <!-- tamaño de barra de busqueda -->
+                <button class="btn btn-outline-success m-0 border-0" type="submit"><img src="./images/header-nav-bar/search-icon.svg" alt=""></button>
+              </form>
+           </div>
+           
+           <div class="navbar__profile-section d-inline-flex pe-5 me-5">
+            <button>Create Post</button>
+            <div class="d-inline-flex position-relative">
+                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">2</span>
+                <img class="rounded-4 shadow-4" src="../images/header-nav-bar/notification-icon.svg" alt="Avatar" style="width: 50px; height: 50px;">
+            </div>
+            <a href=""><img src="../images/discuss-view/user-profile-picture.webp" class="rounded-circle" alt="perfil" width="40" height="40"/></a>
+          </div>
+  
         </nav>
       
       </header>
       
       <main>
-        <div class="container">
-          <div class="row">
-            <div class="left-aside col-lg-1 flex-lg-column d-none d-lg-flex justify-content-center align-items-center">
-                <div class="left-aside__icon-container">
-                    <img src="../images/main/heart-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
-                </div>
-                <div class="left-aside__icon-container">
-                    <img src="../images/main/unicorn-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
-                </div>
-                <div class="left-aside__icon-container">
-                    <img src="../images/main/save-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
-                </div>
-                <div class="left-aside__icon-container">
-                    <div class="btn-group dropend">
-                        <img src="../images/main/more-3dots-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
-                        <ul class="dropdown-menu d-flex-column">
-                            <div>
-                                <li>Copy link</li>
-                                <img src="../images/main/copylink-icon.svg" alt="">
-                            </div>
-                            <li>Share to twitter</li>
-                            <li>Share to Linkedin</li>
-                            <li>Share to Reddit</li>
-                            <li>Share to Hacker News</li>
-                            <li>Share to Facebook</li>
-                            <li>Share Post via</li>
-                            <li>Report Abuse</li>
-                        </ul>
-                    </div>
-                </div>
 
+        <div class="left-aside col-lg-1 flex-lg-column d-none d-lg-flex position-fixed ms-1 z-index-master">
+            <div class="left-aside__icon-container">
+                <img src="../images/main/heart-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light border-0 m-3" data-bs-toggle="dropdown" aria-expanded="false">
             </div>
-            <div class="main col-12 col-lg-8">
+            <div class="left-aside__icon-container">
+                <img src="../images/main/unicorn-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light border-0 m-3" data-bs-toggle="dropdown" aria-expanded="false">
+            </div>
+            <div class="left-aside__icon-container">
+                <img src="../images/main/save-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light border-0 m-3" data-bs-toggle="dropdown" aria-expanded="false">
+            </div>
+            <div class="left-aside__icon-container">
+                <div class="btn-group dropend z-index-master">
+                    <img src="../images/main/more-3dots-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light border-0 m-3" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu d-flex-column z-index-master">
+                        <button class="d-flex justify-content-between w-100">
+                            <li>Copy link</li>
+                            <img src="../images/main/copylink-icon.svg" alt="">
+                        </button>
+                        <button class="w-100">Share to twitter</button>
+                        <button class="w-100">Share to Linkedin</button>
+                        <button class="w-100">Share to Reddit</button>
+                        <button class="w-100">Share to Hacker News</button>
+                        <button class="w-100">Share to Facebook</button>
+                        <button class="w-100">Share Post via</button>
+                        <button class="w-100">Report Abuse</button>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container position-relative">
+          <div class="row ms-1">
+
+            <div class="main col-12 col-lg-9">
                 <div class="card card-body">
                     <section class="container">
                       <div class="row">
                         <div class="col-12 col-lg-12">
-                            <img src="/images/main/Simon Egresand.webp" alt="image user profile" height="50px"
-                            style="border-radius: 360px;">
-                            <h6 class="card__profile-name">lifeascoder</h6>
-                            <p class="card__date">May 1</p>
+                            <div class="card__profile-container d-flex m-3">
+                                <img src="/images/discuss-view/lifeascoder-profile.webp" alt="image user profile" height="50px"style="border-radius: 360px;">
+                                <div class="card__username-container">
+                                    <h6 class="card__profile-name m-0">lifeascoder</h6>
+                                    <p class="card__date m-0">May 1</p>
+                                </div>  
+                            </div>
                             <h3 class="card__post-tittle" >Can´t connect Bluetooth neckband in Ubuntu 22.04</h3>
-                            <span class="card__tags m-2">#Discuss</span><span class="card__tags m-2">#help</span><span class="card__tags m-2">#ubuntu</span><span class="card__tags m-2">#linux</span>
+                            <button class="card__tags m-2">#Discuss</button><button class="card__tags m-2">#help</button><button class="card__tags m-2">#ubuntu</button><button class="card__tags m-2">#linux</button>
                             <p class="card__post-body">I've been using the Neckband ZEB Evolve - A wireless Neckband earphone by Zebronics. I've bought it through Amazon. It worked fine with my Phone and my Windows operating system. But when it comes to Linux, It didn't connect. I tried many times but I failed. I am using Ubuntu 22.04. I can't come up with a solution. I am stuck spending ₹829 ( 10.83 United States Dollar ) on a Neckband and.. Well I am trapped!
                             </p>
                             <p> <em>Please help me if you know how to solve this issue, I beg your pardon crying</em> </p>    
@@ -87,12 +106,12 @@
 
                                         </div>
 
-                                        <img src="../images/discuss-view/markdown-guide-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="../images/discuss-view/markdown-guide-icon.svg" alt="" type="button" class="btn btn-secondary dropdown-toggle bg-light border-0" data-bs-toggle="dropdown" aria-expanded="false">
                                         
                                     </div>
                                   </div>
                                 </div>
-                                <div class="float-start mt-2 pt-1">
+                                <div class="float-start mt-2 pt-1 ms-5 ps-2">
                                   <button type="button" class="btn btn-primary btn-sm">Post comment</button>
                                   <button type="button" class="btn btn-outline-primary btn-sm">Cancel</button>
                                 </div>

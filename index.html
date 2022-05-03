@@ -10,19 +10,35 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light d-inline-flex border border-dark">
-            <div class="container-fluid">
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <span><a href="#"><img src="../images/header-nav-bar/devto-logo.svg" alt=""></a></span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-0">
+            <div class="container-fluid justify-content-between">
+            <div class="navbar__left-side d-inline-flex">
+            
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <span><a href="#"><img src="../images/header-nav-bar/devto-logo.svg" alt=""></a></span>
+                </div>
+                  <form class="d-flex border border-1 ms-3">
+                    <input class="form-control m-0 border-0" type="search" placeholder="Search" aria-label="Search"> <!-- tamaño de barra de busqueda -->
+                    <button class="btn btn-outline-success m-0 border-0" type="submit"><img src="./images/header-nav-bar/search-icon.svg" alt=""></button>
+                  </form>
+
             </div>
-              <formm class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </formm>
-           </div>  
+
+              <div class="navbar__right-side d-inline-flex m-4">
+                <button>Create Post</button>
+                <div class="d-inline-flex position-relative">
+                    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">2</span>
+                    <img class="rounded-4 shadow-4" src="./images/header-nav-bar/notification-icon.svg" alt="Avatar" style="width: 50px; height: 50px;">
+                </div>
+                <a href=""><img src="./images/discuss-view/user-profile-picture.webp" class="rounded-circle" alt="perfil" width="40" height="40"/></a>
+              </div>
+
+           </div>
+           
+  
         </nav>
       
       </header>
@@ -254,7 +270,7 @@
                         <a href="" class="card-link"> Why coaching?</a>
                       </div>
                       <div class="card-help-container">
-                        <a href="#" class="card-link">Can't connect Bluetooth neckband in Ubuntu 22.04</a>
+                        <a href="./views/discuss-view.html" class="card-link">Can't connect Bluetooth neckband in Ubuntu 22.04</a>
                       </div>
                     </div>
                 </div>
