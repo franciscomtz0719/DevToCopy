@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: #ffffffc7;
+  background-color: #c5c5c5;
   height: 4rem;
   margin-bottom: 1rem;
 }
@@ -33,7 +33,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffffc7;
+  background-color: #c5c5c5;
   border-radius: .2rem;
   margin-right: 1rem;
   border-color: #3b49df;
@@ -79,7 +79,7 @@
 }
 
 .main .card__nobg-button {
-  background-color: #ffffffc7;
+  background-color: #c5c5c5;
   border: none;
   margin-top: 1rem;
   font-size: 12px;
@@ -104,6 +104,10 @@
 
 .right-aside h3 {
   font-weight: bold;
+}
+
+.right-aside .card {
+  margin-bottom: 1rem;
 }
 
 .right-aside .card__tittle {

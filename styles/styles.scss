@@ -1,7 +1,7 @@
 $font-style: 'Open Sans', sans-serif;
 $font-accents-color: #4649df;
 $main-bg-color: #f5f5f5;
-$card-bg-color: #ffffffc7;
+$card-bg-color: #c5c5c5;
 $primary-button-bg: #3b49df;
 $secondary-button-bg: #bdbdbd;
 $secondary-button-hover: #d6d6d7;
@@ -124,8 +124,10 @@ margin-bottom: 1rem;
     }
 
     .card{
+        margin-bottom: 1rem;
         &__tittle{
             color:$font-accents-color;
         }
     }
 }
+
