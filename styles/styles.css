@@ -3,7 +3,7 @@
 }
 
 .body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .navbar {
@@ -33,10 +33,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #c5c5c5;
+  background-color: #ffffff;
   border-radius: .2rem;
   margin-right: 1rem;
   border-color: #3b49df;
+}
+
+.navbar__button:hover {
+  background-color: #4649df;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .navbar__notification-icon {
@@ -58,6 +64,28 @@
   font-size: 16px;
 }
 
+.left-aside__social-network:hover {
+  background-color: #2416e430;
+}
+
+.left-aside .list-grop-item:hover {
+  background-color: #7d16e430;
+  border-radius: .25rem;
+  text-decoration: underline;
+  color: #4649df;
+}
+
+.left-aside .my-tags__list-item {
+  list-style: none;
+}
+
+.left-aside .my-tags__list-item:hover {
+  background-color: #7d16e430;
+  border-radius: .25rem;
+  text-decoration: underline;
+  color: #4649df;
+}
+
 .main a {
   text-decoration: none;
   color: #171717;
@@ -72,14 +100,28 @@
   font-weight: bold;
 }
 
+.main .card__tittle:hover {
+  color: #4649df;
+}
+
+.main .card__post-tittle {
+  font-size: 48px;
+  -webkit-transition: ease;
+  transition: ease;
+}
+
 .main .card__green-bg {
   background-color: rgba(26, 214, 67, 0.1);
   border-color: #1ad643;
   border-radius: .2rem;
 }
 
+.main .card__green-bg:hover {
+  background-color: rgba(26, 214, 67, 0.584);
+}
+
 .main .card__nobg-button {
-  background-color: #c5c5c5;
+  background-color: #ffffff;
   border: none;
   margin-top: 1rem;
   font-size: 12px;
@@ -97,9 +139,32 @@
   font-size: 12px;
 }
 
+.main .card__tags {
+  background-color: #ffffff;
+  border: none;
+  border-radius: .5rem;
+  margin-right: 1rem;
+}
+
+.main .card__btn-aux {
+  margin-right: 1rem;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #171717;
+}
+
+.main .card__btn-submit {
+  margin-right: 1rem;
+  background-color: #3b49df;
+}
+
 .right-aside a {
   text-decoration: none;
   color: #171717;
+}
+
+.right-aside a:hover {
+  color: #4649df;
 }
 
 .right-aside h3 {
@@ -112,5 +177,21 @@
 
 .right-aside .card__tittle {
   color: #4649df;
+}
+
+.left-aside-discuss {
+  z-index: 2;
+}
+
+.left-aside-discuss .btn-group {
+  border-radius: 1rem;
+}
+
+.left-aside-discuss .btn-group button {
+  width: 12rem;
+  text-align: start;
+  border: none;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

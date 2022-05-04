@@ -85,7 +85,7 @@
 
     <main>
       <div
-        class="left-aside col-lg-1 flex-lg-column d-none d-lg-flex position-fixed ms-1"
+        class="left-aside-discuss col-lg-1 flex-lg-column d-none d-lg-flex position-fixed ms-1"
       >
         <!--left aside start-->
         <div class="left-aside__icon-container">
@@ -133,13 +133,13 @@
                 <li>Copy link</li>
                 <img src="../images/main/copylink-icon.svg" alt="" />
               </button>
-              <button class="w-100">Share to twitter</button>
-              <button class="w-100">Share to Linkedin</button>
-              <button class="w-100">Share to Reddit</button>
-              <button class="w-100">Share to Hacker News</button>
-              <button class="w-100">Share to Facebook</button>
-              <button class="w-100">Share Post via</button>
-              <button class="w-100">Report Abuse</button>
+              <button>Share to twitter</button>
+              <button>Share to Linkedin</button>
+              <button>Share to Reddit</button>
+              <button>Share to Hacker News</button>
+              <button>Share to Facebook</button>
+              <button>Share Post via</button>
+              <button>Report Abuse</button>
             </ul>
           </div>
         </div>
@@ -149,23 +149,26 @@
       <!--main starts-->
       <div class="container position-relative">
         <div class="row ms-1">
-          <div class="main col-12 col-lg-9">
-            <div class="card card-body">
+          <div class="main col-12 col-lg-8">
+            <div class="card card-body d-flex-column">
               <section class="container">
                 <div class="row">
                   <div class="col-12 col-lg-12">
-                    <div class="card__profile-container d-flex m-3">
-                      <img
-                        src="/images/discuss-view/lifeascoder-profile.webp"
-                        alt="image user profile"
-                        height="50px"
-                        style="border-radius: 360px"
-                      />
-                      <div class="card__username-container">
-                        <h6 class="card__profile-name m-0">lifeascoder</h6>
-                        <p class="card__date m-0">May 1</p>
-                      </div>
-                      <h3 class="card__tittle">
+                    <div class="card__profile-container d-flex-column m-3">
+                        <div class="card__username-container d-flex">
+                            <img
+                            src="/images/discuss-view/lifeascoder-profile.webp"
+                            alt="image user profile"
+                            height="50px"
+                            style="border-radius: 360px"
+                          />
+                          <div class="card__username-container">
+                            <h6 class="card__profile-name m-0">lifeascoder</h6>
+                            <p class="card__date m-0">May 1</p>
+                          </div>
+                        </div>
+
+                      <h3 class="card__tittle card__post-tittle">
                         Can't connect Bluetooth neckband in Ubuntu 22.04
                       </h3>
                       <button class="card__tags m-2">#Discuss</button
@@ -190,49 +193,55 @@
                       </p>
 
                       <div class="card__footer py-3 border-0">
-                        <div class="d-flex flex-start w-100">
-                          <img
-                            class="rounded-circle shadow-1-strong me-3"
-                            src="../images/discuss-view/user-profile-picture.webp"
-                            alt="avatar"
-                            width="40"
-                            height="40"
-                          />
-                          <div class="form-outline__upload-template-button">
-                            <div class="form-outline__upload-template-button">
-                              <button
-                                type="button"
-                                class="btn btn-primary btn-sm"
-                              >
-                                <img
-                                  src="../images/discuss-view/upload-picture.svg"
-                                  alt=""
-                                />
-                                Upload image
-                              </button>
-                              <button
-                                type="button"
-                                class="btn btn-outline-primary btn-sm"
-                              >
-                                <img
-                                  src="../images/discuss-view/response-template.svg"
-                                  alt=""
-                                />
-                                Templates
-                              </button>
+                        <div class="w-100">
+                          <div class="d-flex flex-start w-100">
+                            <img class="rounded-circle shadow-1-strong me-3"
+                              src="../images/discuss-view/user-profile-picture.webp" alt="avatar" width="40"
+                              height="40" />
+                            <div class="form-outline w-100">
+                              <textarea class="form-control" id="textAreaExample" rows="4"
+                                style="background: #fff;">Add to the discussion</textarea>
+                            
+                                <div class="form-outline__upload-template-button">
+                                    <div class="form-outline__upload-template-button d-inline-flex">
+                                      <button
+                                        type="button"
+                                        class="btn btn-primary btn-sm card__btn-aux"
+                                      >
+                                        <img
+                                          src="../images/discuss-view/upload-picture.svg"
+                                          alt=""
+                                        />
+                                        
+                                        Upload image
+                                      </button>
+                                      <button
+                                        type="button"
+                                        class="btn btn-outline-primary btn-sm card__btn-aux"
+                                      >
+                                        <img
+                                          src="../images/discuss-view/response-template.svg"
+                                          alt=""
+                                        />
+                                        Templates
+                                      </button>
+                                    </div>
+                                    <img
+                                      src="../images/discuss-view/markdown-guide-icon.svg"
+                                      alt=""
+                                      type="button"
+                                      class="btn btn-secondary dropdown-toggle bg-light border-0"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                    />
+                                  </div>    
+                            
                             </div>
-                            <img
-                              src="../images/discuss-view/markdown-guide-icon.svg"
-                              alt=""
-                              type="button"
-                              class="btn btn-secondary dropdown-toggle bg-light border-0"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            />
                           </div>
+
                         </div>
                         <div class="d-flex mt-2 pt-1 ms-5 ps-2">
-                          <button type="button" class="btn btn-primary btn-sm">
+                          <button type="button" class="btn btn-primary btn-sm card__btn-submit">
                             Submit
                           </button>
                           <button
@@ -250,6 +259,9 @@
                         </div>
                       </div>
                     </div>
+
+
+
                   </div>
                 </div>
               </section>
@@ -257,7 +269,7 @@
           </div>
           <!--main ends-->
 
-          <div class="right-aside col-sm-12 col-lg-3">
+          <div class="right-aside col-sm-12 col-lg-4">
             <!--right aside aside start-->
 
             <div class="card card-aside1">
