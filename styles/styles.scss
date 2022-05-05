@@ -17,13 +17,16 @@ $title-card-color: #171717;
 }
 
 .body{
-    background-color: $main-bg-color;
+    background-color: $card-bg-color;
 
 }
+
 
 .navbar{
 background-color: $card-bg-color;
 height: 4rem;
+border-bottom: 1px solid $secondary-button-hover;
+
 margin-bottom: 1rem;
 
     &__left-section{
@@ -44,9 +47,9 @@ margin-bottom: 1rem;
         justify-content: center;
         align-items: center;
         background-color: $main-bg-color;
-        border-radius: .2rem;
+        border-radius: .3rem;
         margin-right: 1rem;
-        border-color: $primary-button-bg;
+        border: 1px solid $primary-button-bg;
 
         &:hover{
             background-color:$font-accents-color;
@@ -69,6 +72,8 @@ margin-bottom: 1rem;
 }
 
 .left-aside{
+    z-index: 2;
+
     a{
         text-decoration: none;
         color: $regular-text-color ;
@@ -117,6 +122,26 @@ margin-bottom: 1rem;
 
     }
 
+    .card-body{
+        margin-top: 1rem;
+    }
+
+    .cover-container{
+
+        margin-bottom: 1rem;
+
+        &__image{
+
+            height: 100%;
+            width: 100%;
+            object-fit: cover
+
+        }
+
+
+
+    }
+
     .card{
         margin-bottom: 1rem;
        
@@ -127,7 +152,7 @@ margin-bottom: 1rem;
             }
         }
         &__post-tittle{
-            font-size: 48px ;
+            font-size: 3rem ;
             transition: ease;
 
 
@@ -176,6 +201,23 @@ margin-bottom: 1rem;
             margin-right: 1rem;
             background-color: $primary-button-bg;
         }
+
+        &__username-container{
+            h6{
+                font-size: 1.2rem;
+                font-weight: bold;
+                &:hover{
+                    color:$font-accents-color;
+                }
+            }
+
+            a{
+                &:hover{
+                    color:$font-accents-color;
+                }
+            }
+
+        }
     }
 
 }
@@ -216,3 +258,12 @@ margin-bottom: 1rem;
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .card {
+        &__post-tittle{
+            font-size: 1rem;
+        }
+    }
+  }
